@@ -26,6 +26,11 @@
 7. Check the output as follows<br>
 ```hdfs dfs -cat <output-directory>/*```
 
+
+8. Verify the specific output for ```B7J``` stock-ticker to be ```122.5``` as follows<br>
+```hdfs dfs -cat <output-directory>/* | grep 'B7J'```
+
+
 #### Additional Details ####
 * Command to get default blocksize defined<br>
 ```hdfs getconf -confKey dfs.blocksize```
