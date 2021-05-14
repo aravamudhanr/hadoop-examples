@@ -1,8 +1,8 @@
 ### Hadoop Examples ###
 
 * Map-Reduce
-  * Simple
-  * Complex
+  * Maximum Close Price for Stocks (Simple)
+  * Mutual Friends (Complex)
 * Spark
 * Hive
 * Pig

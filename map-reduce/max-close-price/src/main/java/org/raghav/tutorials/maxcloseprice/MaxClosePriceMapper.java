@@ -1,4 +1,4 @@
-package org.raghav.tutorials.stocks.maxcloseprice;
+package org.raghav.tutorials.maxcloseprice;
 
 import org.apache.hadoop.io.FloatWritable;
 import org.apache.hadoop.io.LongWritable;
@@ -12,7 +12,9 @@ public class MaxClosePriceMapper extends Mapper<LongWritable, Text, Text, FloatW
     @Override
     public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         String line = value.toString();
-        System.out.println(line);
-        context.write(new Text("BLB"),new FloatWritable((float) 37.42));
+        String[] column = line.split(",");
+        String stock = column[1];
+        Float closePrice = Float.parseFloat(column[6]);
+        context.write(new Text(stock), new FloatWritable(closePrice));
     }
 }

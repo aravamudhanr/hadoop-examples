@@ -14,7 +14,7 @@
     </properties>
 
     <modules>
-        <module>map-reduce/simple</module>
+        <module>map-reduce/max-close-price</module>
     </modules>
 
     <build>

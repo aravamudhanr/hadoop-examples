@@ -10,9 +10,9 @@
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>simple-map-reduce</artifactId>
+    <artifactId>max-close-price</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>Hadoop Map-Reduce Simple Program</name>
+    <name>Maximum Close Price for Stocks</name>
 
     <build>
         <plugins>
@@ -21,7 +21,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>org.raghav.tutorials.stocks.maxcloseprice.MaxClosePrice</mainClass>
+                            <mainClass>org.raghav.tutorials.maxcloseprice.MaxClosePrice</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>

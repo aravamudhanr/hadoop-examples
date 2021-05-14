@@ -1,10 +1,10 @@
-### Hadoop Map-Reduce Simple Program ###
+### Hadoop Map-Reduce Program to find maximum close price for stocks ###
 
 1. Clone the project<br>
 
 
 2. Go the project directory<br>
-```cd hadoop-examples/map-reduce/simple```
+```cd hadoop-examples/map-reduce/max-close-price```
 
 
 3. Build the project<br>
@@ -20,7 +20,7 @@
 
 
 6. Submit the Map-Reduce job by running the jar as follows<br>
-```hadoop jar simple-map-reduce-1.0-SNAPSHOT-jar-with-dependencies.jar <input-file-path> <output-directory>```
+```hadoop jar max-close-price-1.0-SNAPSHOT-jar-with-dependencies.jar <input-file-path> <output-directory>```
 
 
 7. Check the output as follows<br>
@@ -40,13 +40,13 @@
 ```hadoop fs -stat %o <input-file-path>```
 
 
-* Command to run mapreduce job with more number of mappers<br>
-```hadoop jar simple-map-reduce-1.0-SNAPSHOT-jar-with-dependencies.jar -Dmapreduce.input.fileinputformat.split.minsize=<bytes> <input-file-path> <output-directory>```<br>
+* Command to run mapreduce job with more mappers<br>
+```hadoop jar max-close-price-1.0-SNAPSHOT-jar-with-dependencies.jar -Dmapreduce.input.fileinputformat.split.minsize=<bytes> <input-file-path> <output-directory>```<br>
 **If the bytes passed in split.minsize is less than actual blocksize of the file, then it'll run with default mappers count. Hence check the actual blocksize of the file before running this command**
 
 
-* Command to run mapreduce job with more number of reducers<br>
-```hadoop jar simple-map-reduce-1.0-SNAPSHOT-jar-with-dependencies.jar -Dmapreduce.job.reduces=<reducer-count> <input-file-path> <output-directory>```
+* Command to run mapreduce job with more reducers<br>
+```hadoop jar max-close-price-1.0-SNAPSHOT-jar-with-dependencies.jar -Dmapreduce.job.reduces=<reducer-count> <input-file-path> <output-directory>```
 
 
 * We can also pass both -Dmapreduce.input.fileinputformat.split.minsize and -Dmapreduce.job.reduces in the same command, but always make sure when passing those extra options, have those before actual arguments to the mapreduce job<br>
