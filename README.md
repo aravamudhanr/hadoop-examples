@@ -2,7 +2,7 @@
 
 * Map-Reduce
   * Maximum Close Price for Stocks (Simple)
-  * Mutual Friends (Complex)
+  * Mutual Friends (Complex with custom writable)
 * Spark
 * Hive
 * Pig

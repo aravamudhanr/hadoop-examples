@@ -15,6 +15,7 @@
 
     <modules>
         <module>map-reduce/max-close-price</module>
+        <module>map-reduce/mutual-friends</module>
     </modules>
 
     <build>
